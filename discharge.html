@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discharge Summary</title>
+  <style>
+    body {
+      background: #f5f6fa;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .summary-box {
+      background: white;
+      padding: 25px;
+      width: 600px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
+    h2 { text-align: center; color: #2c3e50; margin-bottom: 20px; }
+    .section {
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #ecf0f1;
+      border-radius: 8px;
+    }
+    button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover { background: #2980b9; }
+  </style>
+</head>
+<body>
+  <div class="summary-box">
+    <h2>Discharge Summary</h2>
+
+    <div class="section"><strong>Patient Name:</strong> Rahul Kumar</div>
+    <div class="section"><strong>Diagnosis:</strong> Viral Fever</div>
+    <div class="section"><strong>Treatment Given:</strong> IV fluids, paracetamol, rest</div>
+    <div class="section"><strong>Discharge Date:</strong> 03 Sept 2025</div>
+    <div class="section"><strong>Follow-up Advice:</strong> Drink fluids, avoid exertion, follow-up after 7 days</div>
+
+    <button onclick="window.location.href='patient-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

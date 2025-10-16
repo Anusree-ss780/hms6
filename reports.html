@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Reports</title>
+  <style>
+    body {
+      background: url("images/bg-hospital.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    .report-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      width: 500px;
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      padding: 12px;
+      background: #ecf0f1;
+      border-radius: 8px;
+    }
+    li:hover {
+      background: #dcdde1;
+    }
+  </style>
+</head>
+<body>
+  <div class="report-box">
+    <h2>Your Reports</h2>
+    <ul>
+      <li><a href="#">Blood Test Report (PDF)</a></li>
+      <li><a href="#">X-Ray Report (PDF)</a></li>
+      <li><a href="#">MRI Scan Report (PDF)</a></li>
+    </ul>
+    <button onclick="window.location.href='patient-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

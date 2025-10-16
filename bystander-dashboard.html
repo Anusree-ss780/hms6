@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bystander Dashboard</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      background: #3498db;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover { background: #2980b9; transform: scale(1.05); }
+    .logout { background: #e74c3c; }
+    .logout:hover { background: #c0392b; }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Bystander Dashboard</h2>
+
+    <button onclick="window.location.href='operation-status.html'">🏥 Operation Progress</button>
+    <button onclick="window.location.href='patient-details.html'">👤 Patient Details</button>
+    <button onclick="window.location.href='tests-undergone.html'">🧪 Tests Undertaken</button>
+
+    <button class="logout" onclick="window.location.href='patient-dashboard.html'">Logout</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emergency Contact</title>
+  <style>
+    body {
+      background: #eef2f3;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .contact-box {
+      background: white;
+      padding: 25px;
+      width: 450px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+    h2 { color: #e74c3c; margin-bottom: 20px; }
+    .contact {
+      background: #fceae9;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 12px;
+      border: none;
+      background: #3498db;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover { background: #2980b9; }
+  </style>
+</head>
+<body>
+  <div class="contact-box">
+    <h2>Emergency Contacts</h2>
+
+    <div class="contact">🚑 Ambulance: <strong>102</strong></div>
+    <div class="contact">🏥 Hospital Emergency: <strong>+91 9876543210</strong></div>
+    <div class="contact">👩‍⚕️ Duty Doctor: <strong>+91 9123456789</strong></div>
+
+    <button onclick="window.location.href='patient-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .dashboard {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      width: 450px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+    button, select {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      background: #3498db;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover, select:hover { background: #2980b9; transform: scale(1.05); }
+    .logout { background: #e74c3c; }
+    .logout:hover { background: #c0392b; }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Admin Dashboard</h2>
+
+    <button onclick="window.location.href='staff-management.html'">👥 Staff Management</button>
+
+    <!-- Staff role dropdown -->
+   <select onchange="openStaffPage(this.value)">
+  <option value="">Select Staff Role</option>
+  <option value="nurse-dashboard.html">Nurse</option>
+  <option value="cleaning-dashboard.html">Cleaning Staff</option>
+  <option value="lab-tech-dashboard.html">Lab Technician</option>
+  <option value="pharmacy-dashboard.html">Pharmacy Staff</option>
+</select>
+
+<script>
+  function openStaffPage(page){
+    if(page) window.location.href = page;
+  }
+</script>
+
+    <button onclick="window.location.href='inventory.html'">📦 Inventory</button>
+    <button onclick="window.location.href='admin-reports.html'">📊 Reports</button>
+    <button onclick="window.location.href='settings.html'">⚙ Settings</button>
+    <button class="logout" onclick="window.location.href='index.html'">Logout</button>
+  </div>
+
+  <script>
+    function openStaffPage(page){
+      if(page) window.location.href = page;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Requests</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      width: 700px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    h2 { text-align:center; color:#2c3e50; margin-bottom:20px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 12px; text-align: center; border-bottom: 1px solid #ccc; }
+    th { background-color: #16a085; color: white; }
+    tr:hover { background-color: #ecf0f1; }
+    button {
+      display: block;
+      margin: 20px auto 0 auto;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #16a085;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover { background: #138d75; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lab Test Requests</h2>
+    <table>
+      <tr>
+        <th>Patient Name</th>
+        <th>Test</th>
+        <th>Requested By</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Rahul Kumar</td>
+        <td>Blood Test</td>
+        <td>Dr. Mehta</td>
+        <td>Pending ⏳</td>
+      </tr>
+      <tr>
+        <td>Anjali Sharma</td>
+        <td>X-Ray</td>
+        <td>Dr. Reddy</td>
+        <td>Completed ✅</td>
+      </tr>
+    </table>
+    <button onclick="window.location.href='lab-tech-dashboard.html'">Back to Lab Dashboard</button>
+  </div>
+</body>
+</html>

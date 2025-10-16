@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bystander Login</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 95%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      background: #27ae60;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover { background: #219150; }
+
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Bystander Login</h2>
+    <input type="text" placeholder="Patient ID">
+    <input type="password" placeholder="Password">
+    <button onclick="window.location.href='bystander-dashboard.html'">Login</button>
+    <button onclick="window.location.href='patient-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

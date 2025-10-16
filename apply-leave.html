@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply Leave</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .form-box {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+    h2 { margin-bottom: 20px; color:#2c3e50; }
+    input, textarea {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button:hover { background: #2980b9; }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Apply for Leave</h2>
+    <input type="date" placeholder="Leave Start Date">
+    <input type="date" placeholder="Leave End Date">
+    <textarea placeholder="Reason for Leave" rows="3"></textarea>
+    <button>Submit</button>
+    <button onclick="window.location.href='doctor-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

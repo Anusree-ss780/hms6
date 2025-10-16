@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      
+      background: url("backgrund.jpg") no-repeat center center fixed;;
+      background-size: cover;
+    }
+
+    .wavy-box {
+      background: rgba(255, 255, 255, 0.92); /* translucent white */
+      padding: 30px;
+      border-radius: 50px 15px 50px 15px;
+      text-align: center;
+      width: 420px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0px); }
+    }
+
+    .logo {
+      width: 90px;
+      margin-bottom: 15px;
+    }
+
+    .dropdown {
+      padding: 12px;
+      width: 100%;
+      margin: 15px 0;
+      border-radius: 10px;
+      border: 2px solid #3498db;
+      background: #f9f9f9;
+      font-size: 16px;
+    }
+
+    .role-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .role-card {
+      background: #f0f9ff;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+      width: 110px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .role-card:hover {
+      transform: scale(1.1);
+      background: #d6f0ff;
+    }
+
+    .role-card img {
+      width: 60px;
+      height: 60px;
+    }
+
+    button {
+      background: #3498db;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 12px;
+      margin-top: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="wavy-box">
+    <img src="logo.jpg" alt="Hospital Logo" class="logo">
+    <h2>Welcome to MEDIBRIDGE the complete Hospital Management System</h2>
+    <select id="hospitalSelect" class="dropdown">
+      <option value="">-- Select Hospital --</option>
+      <option value="Rajagiri_Hospital">Rajagiri Hospital</option>
+      <option value="Aster_Medi_City">Astermedi City </option>
+      <option value="sunrisre">Sunrise Medical Center</option>
+    </select>
+
+    <div class="role-container">
+      <div class="role-card">
+        <img src="patient.jpg" alt="Patient">
+        <button onclick="redirectTo('patient-login.html')">Patient Login</button>
+      </div>
+      <div class="role-card">
+        <img src="doctor.jpg" alt="Doctor">
+        <button onclick="redirectTo('doctor-login.html')">Doctor Login</button>
+      </div>
+      <div class="role-card">
+        <img src="admin.jpg" alt="Admin">
+        <button onclick="redirectTo('admin-login.html')">Admin Login</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function redirectTo(page) {
+      let hospital = document.getElementById("hospitalSelect").value;
+      if (!hospital) {
+        alert("Please select a hospital first!");
+        return;
+      }
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Login</title>
+  <style>
+    body {
+      background: url("d.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; margin: 0;
+    }
+    .login-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px; border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      text-align: center; width: 320px;
+    }
+    h2 { margin-bottom: 20px; color: #2c3e50; }
+    input {
+      width: 100%; padding: 12px; margin: 10px 0;
+      border-radius: 10px; border: 1px solid #27ae60;
+    }
+    button {
+      background: #27ae60; color: white; border: none;
+      padding: 12px; border-radius: 12px; font-size: 16px;
+      cursor: pointer; width: 100%; margin-top: 10px;
+    }
+    button:hover { background: #1e8449; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Doctor Login</h2>
+    <input type="text" placeholder="User ID" id="userId">
+    <input type="password" placeholder="Password" id="password">
+    <button onclick="login()">Login</button>
+    <button onclick="window.location.href='index.html'">Back</button>
+  </div>
+
+  <script>
+    function login() {
+      let user = document.getElementById("userId").value;
+      let pass = document.getElementById("password").value;
+
+      if (user && pass) {
+        window.location.href = "doctor-dashboard.html";
+      } else {
+        alert("Please enter User ID and Password!");
+      }
+    }
+  </script>
+</body>
+</html>

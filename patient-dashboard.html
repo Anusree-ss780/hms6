@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Dashboard</title>
+  <style>
+    body {
+      background: url('sda.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .dashboard {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      background: #3498db;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+
+    .logout {
+      background: #e74c3c;
+    }
+
+    .logout:hover {
+      background: #c0392b;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Patient Dashboard</h2>
+
+    <!-- Patient features -->
+    <button onclick="window.location.href='appointment.html'">📅 Book Appointment</button>
+    <button onclick="window.location.href='reports.html'">📊 View Reports</button>
+    <button onclick="window.location.href='billing.html'">💳 Billing</button>
+    <button onclick="window.location.href='discharge.html'">📄 Discharge Summary</button>
+    <button onclick="window.location.href='emergency.html'">🚑 Emergency Contact</button>
+
+    <!-- Bystander Login -->
+    <button onclick="window.location.href='bystander-login.html'">👥 Bystander Login</button>
+
+    <button class="logout" onclick="window.location.href='index.html'">Logout</button>
+  </div>
+</body>
+</html>

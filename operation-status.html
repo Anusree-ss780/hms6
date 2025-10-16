@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Operation Status</title>
+  <style>
+    body { font-family: Arial; background: #f5f6fa; text-align:center; padding:50px; }
+    .status-box { background:white; padding:25px; border-radius:12px; display:inline-block; box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+    h2{margin-bottom:20px;}
+    .step { margin:10px 0; padding:10px; background:#ecf0f1; border-radius:8px; }
+    button { margin-top:20px; padding:12px 20px; border:none; background:#3498db; color:white; border-radius:8px; cursor:pointer;}
+    button:hover{background:#2980b9;}
+  </style>
+</head>
+<body>
+  <div class="status-box">
+    <h2>Operation Progress</h2>
+    <div class="step">Pre-op completed ✅</div>
+    <div class="step">Under Surgery 🔄</div>
+    <div class="step">Recovery Pending ⏳</div>
+    <button onclick="window.location.href='bystander-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dispense Medicine</title>
+  <style>
+    body {
+      background: url('images/hospital-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 50px;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 15px;
+      width: 500px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+    input, select {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #d35400;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button:hover { background: #e67e22; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Dispense Medicine</h2>
+    <select>
+      <option>Select Patient</option>
+      <option>Rahul Kumar</option>
+      <option>Anjali Sharma</option>
+    </select>
+    <select>
+      <option>Select Medicine</option>
+      <option>Paracetamol</option>
+      <option>Ibuprofen</option>
+    </select>
+    <input type="number" placeholder="Quantity">
+    <button>Dispense</button>
+    <button onclick="window.location.href='pharmacy-dashboard.html'">Back to Pharmacy Dashboard</button>
+  </div>
+</body>
+</html>

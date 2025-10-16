@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Billing</title>
+  <style>
+    body {
+      background: url("images/bg-hospital.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .bill-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      width: 450px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .total {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    button {
+      padding: 12px;
+      margin-top: 15px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+  <div class="bill-box">
+    <h2>Billing & Payments</h2>
+    <table>
+      <tr><th>Service</th><th>Amount</th></tr>
+      <tr><td>Consultation</td><td>₹500</td></tr>
+      <tr><td>Medicines</td><td>₹1200</td></tr>
+      <tr><td>Lab Tests</td><td>₹800</td></tr>
+      <tr class="total"><td>Total</td><td>₹2500</td></tr>
+    </table>
+    <button>Pay Now</button><br>
+    <button onclick="window.location.href='patient-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>

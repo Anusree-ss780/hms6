@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prescriptions</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #eef2f3; display: flex; justify-content: center; align-items: center; height: 100vh; }
+    .form-box { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 6px 20px rgba(0,0,0,0.25); width: 400px; text-align: center; }
+    input, textarea, button { width: 100%; margin: 10px 0; padding: 12px; border-radius: 8px; border: 1px solid #ccc; }
+    button { background: #27ae60; color: white; border: none; cursor: pointer; }
+    button:hover { background: #219150; }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h2>Write Prescription</h2>
+    <form>
+      <input type="text" placeholder="Patient Name">
+      <textarea rows="5" placeholder="Prescription details..."></textarea>
+      <button type="submit">Save Prescription</button>
+    </form>
+    <button onclick="window.location.href='doctor-dashboard.html'">Back</button>
+  </div>
+</body>
+</html>
